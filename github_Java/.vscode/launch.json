@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HealingSleep_1288",
+            "request": "launch",
+            "mainClass": "swexpert.level2.HealingSleep_1288",
+            "projectName": "github_Java"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
