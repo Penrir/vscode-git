@@ -35,6 +35,7 @@ class HambergerDiet5215 {
             System.out.printf("#%d %d\n", test_case, max);
             max =0;
         }
+        sc.close();
     }
     static void HambergerDietDFS( int[][] berger,  int idx ,  int ntaste,  int ncal){
         //칼로리 최대치와 현재 칼로리 같아지면 최대맛과 비교후 종료.
@@ -45,7 +46,7 @@ class HambergerDiet5215 {
             }
             return;
         }
-        //칼로리가 맥스치를 넘을 떄도 좀료
+        //칼로리가 맥스치를 넘을 ??도 좀료
         if(ncal > tmaxCalories){
             return;
         }
