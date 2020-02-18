@@ -1,6 +1,7 @@
 package baekjoon;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 //전쟁 땅따먹기
@@ -27,13 +28,29 @@ public class Baejoon1270UseList {
 					list.get(idx).count++;
 				}
 			}
-			Team[] arr = list.stream().toArray(Team[]::new);
-			for (int j = 0; j < arr.length; j++) {
-//				System.out.println(arr[j]);
-				if(arr[j].count > t/2) {
-					answer = arr[j].no;
+			//iterator만들어서 해봄.
+			Iterator<Team> it = list.iterator();
+			Team team;
+			while(it.hasNext()) {
+				team = it.next();
+				if(team.getCount() > t/2) {
+					answer = team.getNo();
+					break;
 				}
 			}
+			
+			
+			//되는거임. 배열로 바꿔서 정답 확인.
+//			Team[] arr = list.stream().toArray(Team[]::new);
+//			for (int j = 0; j < arr.length; j++) {
+////				System.out.println(arr[j]);
+//				if(arr[j].count > t/2) {
+//					answer = arr[j].no;
+//				}
+//			}
+			
+			
+			
 			//리스트 돌면서 병사수가 전체 병사수의 절반 넘는 팀 찾기.
 //			for (int j = 0; j < list.size(); j++) {
 //				if(list.get(j).count > t/2) {
@@ -46,7 +63,7 @@ public class Baejoon1270UseList {
 			}else {
 				System.out.println(answer);
 			}
-			answer = -1;
+			answer = 0;
 			list.clear();
 		}
 		sc.close();
@@ -62,8 +79,8 @@ public class Baejoon1270UseList {
 	}
 	
 	static class Team{
-		int no;
-		int count;
+		private int no;
+		private int count;
 		Team(int n, int c){
 			no = n;
 			count = c;
@@ -83,14 +100,6 @@ public class Baejoon1270UseList {
 		@Override
 		public String toString() {
 			return "Team [no=" + no + ", count=" + count + "]";
-		}
-		@Override
-		public int hashCode() {
-			final int prime = 31;
-			int result = 1;
-			result = prime * result + count;
-			result = prime * result + no;
-			return result;
 		}
 		@Override
 		public boolean equals(Object obj) {
