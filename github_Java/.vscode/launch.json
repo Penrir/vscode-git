@@ -4,67 +4,12 @@
     // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SwExpert_hw_20200204",
-            "request": "launch",
-            "mainClass": "swexpert.level3.SwExpert_hw_20200204",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - HealingSleep_1288",
-            "request": "launch",
-            "mainClass": "swexpert.level2.HealingSleep_1288",
-            "projectName": "github_Java"
-        },
+
         {
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-App<github_Java>",
-            "request": "launch",
-            "mainClass": "app.App",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-AlphaberToInt2050<github_Java>",
-            "request": "launch",
-            "mainClass": "swexpert.level1.AlphaberToInt2050",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-calender2056<github_Java>",
-            "request": "launch",
-            "mainClass": "swexpert.level1.calender2056",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Gmae369_1926<github_Java>",
-            "request": "launch",
-            "mainClass": "swexpert.level2.Gmae369_1926",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-PatternLength_2007<github_Java>",
-            "request": "launch",
-            "mainClass": "swexpert.level2.PatternLength_2007",
-            "projectName": "github_Java"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-HambergerDiet5215<github_Java>",
-            "request": "launch",
-            "mainClass": "swexpert.level3.HambergerDiet5215",
-            "projectName": "github_Java"
-        }
     ]
 }
