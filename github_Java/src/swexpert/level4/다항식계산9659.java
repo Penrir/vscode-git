@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 
-public class 다항싞계산9659 {
+public class 다항식계산9659 {
 	private static long[][] arr;
 	public static void main(String args[]) throws Exception {
 		System.setIn(new FileInputStream("src/input.txt"));

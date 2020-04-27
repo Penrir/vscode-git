@@ -32,13 +32,27 @@ import java.io.FileInputStream;
 
 public class PowerSet {
 	public static void main(String args[]) throws Exception {
-		//System.setIn(new FileInputStream("res/input.txt"));
-		Scanner sc = new Scanner(System.in);
-		int T;
-		T = sc.nextInt();
-		for (int test_case = 1; test_case <= T; test_case++) {
-
+		
+		printPowerSet(new int[3]);
+		
+	}
+	
+	//원소 31개 이하는 int에 시프트 이용해서 구하기 가능
+	public static void printPowerSet(int[] arr) {
+		int len = arr.length;
+		for (int i = 0; i < Math.pow(2, len); i++) {
+			int idx = 1;
+			for (int j = 0; j < len; j++) {
+				if( (i & idx) != 0)
+					System.out.print("1");
+				else {
+					System.out.print("0");
+				}
+				idx <<= 1;
+			}
+			System.out.println();
 		}
 	}
+	
 }
 
