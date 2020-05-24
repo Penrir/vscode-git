@@ -1,5 +1,6 @@
 package algo;
 
+import java.util.Arrays;
 /////////////////////////////////////////////////////////////////////////////////////////////
 // 기본 제공코드는 임의 수정해도 관계 없습니다. 단, 입출력 포맷 주의
 // 아래 표준 입출력 예제 필요시 참고하세요.
@@ -30,15 +31,39 @@ package algo;
 import java.util.Scanner;
 import java.io.FileInputStream;
 
-public class Comp {
+public class Comb {
 	public static void main(String args[]) throws Exception {
-		//System.setIn(new FileInputStream("res/input.txt"));
-		Scanner sc = new Scanner(System.in);
-		int T;
-		T = sc.nextInt();
-		for (int test_case = 1; test_case <= T; test_case++) {
-
+		int r = 3;
+		int n = 5;
+		int[] arr = new int[n];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i+1;
 		}
+		comb(arr, r);
+
+	}
+
+	private static void comb(int[] arr, int target) {
+		int len = arr.length;
+		for (int i = 1; i <= (1<<len); i++) {
+			if(Integer.bitCount(i) == target) {
+				print(arr, i);
+			}
+		}
+	}
+
+	private static void print(int[] arr, int check) {
+		for (int i = 0; i < arr.length; i++) {
+			if( (1<<i & check) != 0) {
+				System.out.print(arr[i] + " ");
+			}
+		}
+		System.out.println();
+	}
+	
+	private int[] nextPermutation(int[] arr) {
+
+		return arr;
 	}
 }
 

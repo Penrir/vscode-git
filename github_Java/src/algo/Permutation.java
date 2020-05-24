@@ -35,9 +35,9 @@ import java.io.FileInputStream;
 public class Permutation {
 	public static void main(String args[]) throws Exception {
 		
-		Integer[] arr = new Integer[]{1, 2, 3};
 //		Integer[] arr = new Integer[]{1, 2, 3};
-//		Integer[] arr = new Integer[]{1, 2, 3, 4};
+//		Integer[] arr = new Integer[]{1, 2, 3};
+		Integer[] arr = new Integer[]{1, 2, 3, 4};
 //		Integer[] arr = new Integer[]{1, 3, 5, 4 ,2};
 //		while(arr != null) {
 //			System.out.println(Arrays.toString(arr));
